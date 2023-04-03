@@ -3,8 +3,8 @@
 // in the html.
 
 $(function () {
-  on('load', function(){
-  })
+  for()
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -29,7 +29,21 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
-  //
+
+  function isPPF(time){
+    timeArray = time.split('-');
+    timeNum= timeArray[1];
+    currentHour = dayjs().format('HH');
+    if(timeNum>currentHour){
+      return "future";
+    }else if(timeNum<currentHour){
+      return "past";
+    }else if(timenum==currentHour){
+      return "present";
+    }else{
+      return;
+    }
+  }
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
