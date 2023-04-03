@@ -3,8 +3,10 @@
 // in the html.
 
 $(function () {
-  for()
-
+  for(var i=0; i<9; i++){
+    var slot = document.getElementById("parent-container").children[i];
+    slot.classList.add(isPPF(slot.id));
+  }
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -33,12 +35,16 @@ $(function () {
   function isPPF(time){
     timeArray = time.split('-');
     timeNum= timeArray[1];
+    console.log(timeNum)
     currentHour = dayjs().format('HH');
     if(timeNum>currentHour){
+      console.log("future");
       return "future";
     }else if(timeNum<currentHour){
+      console.log("past");
       return "past";
-    }else if(timenum==currentHour){
+    }else if(timeNum==currentHour){
+      console.log("present");
       return "present";
     }else{
       return;
