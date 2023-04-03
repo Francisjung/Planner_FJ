@@ -3,6 +3,8 @@
 // in the html.
 
 $(function () {
+  on('load', function(){
+  })
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -17,7 +19,9 @@ $(function () {
     var timeDesc = this.parentNode.children[1].value;
     console.log(parentID)
     console.log(timeDesc)
+    //REVISIT THIS, IT DOES NOT WORK AS INTENDED
     localStorage.setItem(parentID, JSON.stringify())
+    localStorage.setItem(timeDesc, JSON.stringify())
   });
 
   // TODO: Add code to apply the past, present, or future class to each time
