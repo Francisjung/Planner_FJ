@@ -12,9 +12,13 @@ $(function () {
  
   //Event listener for saveBtn
   var saveBtn = $('.saveBtn');
-  saveBtn.on("click", function(this) {
-    consoleLog(this.parentNode)
-  })
+  saveBtn.on("click", function() {
+    var parentID = this.parentNode.id;
+    var timeDesc = this.parentNode.children[1].value;
+    console.log(parentID)
+    console.log(timeDesc)
+    localStorage.setItem(parentID, JSON.stringify())
+  });
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
