@@ -9,8 +9,6 @@
 
 ## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
 - [Usage](#usage)
 - [License](#license)
 - [Features](#features)
@@ -18,6 +16,14 @@ If your README is long, add a table of contents to make it easy for users to fin
 ## Usage
 
 Using the schedule is simple, to begin go to (https://francisjung.github.io/Planner_FJ/).
+![Screenshot 1 of planner](https://raw.githubusercontent.com/Francisjung/Planner_FJ/main/Assets/screenshot1.PNG)
+
+You may enter any task you have for the hour in the box to the right of the time. A green box means it is in the future, grey means it is in the present, and red means it is in the future.
+![Screenshot 2 of planner](https://raw.githubusercontent.com/Francisjung/Planner_FJ/main/Assets/screenshot2.PNG)
+
+Once you have the content of the schedule filled out, you may press the save button to commit it to local storage. This will remain until the cache has been cleared or something new is entered to the text field. 
+![Screenshot 3 of planner](https://raw.githubusercontent.com/Francisjung/Planner_FJ/main/Assets/screenshot3.PNG)
+
 
 ## License
 
